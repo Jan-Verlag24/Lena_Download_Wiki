@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+  <!--change this to your oc's name or whatever you want the page title to be-->
+    <title>Lena - Demo 0.1</title>
+  <!--the favicon for this page is the same "icon" image used at the top!-->
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+      
+<!--there's a default style for the page background, but you can set something unique per character here!-->
+<style>
+html {
+    /*this is the bg color that will show in case the gradient doesn't*/
+    background: #0F0722;
+    /*to make a cool gradient easily, you can use this site: 
+     * https://cssgradient.io/ */
+    background: linear-gradient(180deg,rgba(15, 7, 34, 1) 0%, rgba(141, 71, 166, 1) 100%);
+    /*you can use this to make it so the bg image stays in place when scrolling*/
+    background-attachment: fixed;
+}
+body {
+    /*i wanted to add a transparent tiled image to go over the top of the gradient, so i did that here!*/
+    background-image: url(images/bg.png);
+    /*no movement when scrolly again*/
+    background-attachment: fixed;
+    /*uncomment this if your tiled image only repeats on the x or y axis (just change y to x, keep in mind it will be covered by the header at the top)*/
+    /*background-repeat: repeat-y;*/
+    /*if you want to tile it on the bottom of the page, use this*/
+    /*background-position: bottom;*/
+}
+</style>
+  </head>
+    
+  <body>
+      
+      <header>
+      <!--change the page title and link here-->
+        <a href="index.html"><h1>Lena - Download</h1></a>
+      </header>
+      
+      <main>
+      <!--at the top we have your OC's name-->
+          <h2 class="character-name">
+      <!--if you don't have an image you want to use, you can remove the <img> tag-->
+              <img src="images/dl-demo-01.png" class="icon">Demo 0.1</h2>
+          
+      <!--this is the little biography table, it floats to the right!-->
+          <aside class="bio">
+            <img src="images/dl-demo-01.png">
+              
+              <table>
+              <!--replace these with whatever info you want-->
+              <tr>
+                  <td>Name</td>
+                  <td>Lena</td>
+              </tr>
+              <tr>
+                  <td>Variante</td>
+                  <td>HTML</td>
+              </tr>
+              <tr>
+                  <td>Version</td>
+                  <td>Demo 0.1</td>
+              </tr>
+              <tr>
+                  <td>Idee</td>
+                  <td>Jan Löwen</td>
+              </tr>
+              <tr>
+                  <td>Bilder</td>
+                  <td>Jan Löwen</td>
+              </tr>
+              <tr>
+                  <td>Sprachen</td>
+                  <td>Deutsch</td>
+              </tr>
+              <tr>
+                  <td>Geschrie-<br>ben in</td>
+                  <td>Notepad<br>VS Code<br>Neocities</td>
+              </tr>
+              <tr>
+                  <td>Geschrie-<br>ben für</td>
+                  <td>FurAffinity</td>
+              </tr>
+              <tr>
+                  <td>Jahr<br>und<br>Copyright</td>
+                  <td>2025-2026<br>-<br>Jan Löwen</td>
+              </tr>
+              <tr>
+                  <td>Übersetz-<br>te Spra-<br>chen</td>
+                  <td>Keine...<br>-<br>Nur auf Anfrage</td>
+              </tr>
+              <tr>
+                  <td>Download</td>
+                  <td><a href="updates/Demo 0.1.zip">Demo 0.1</a></td>
+              </tr>
+                  
+              </table>
+          
+          </aside>
+          <section id="info">
+          <h3 class="gold">Info</h3>
+          <p class="quote">Dies ist die Download-Seite mit allen Versionen der Geschichte...</p>
+          <p>Wenn ihr die Geschichte gerne haben wollt, so wie diese früher ausgesehen hat, wenn es die Version nicht mehr über itch.io gibt, ladet sie euch gerne über diese Seite runter.</p>
+          </section>
+          
+          <section id="personality">
+          <h3 class="purple">Wieso ich das mache?</h3>
+          <p>Es gibt gewisse Gründe, warum ich das mache:</p>
+          <h4>Erstens:</h4>
+          <li>Ältere Versionen (Demo und Vollversionen) werde ich von <a href="https://jan955.itch.io/lena-htmlgeschichte">Itch.io</a> entfernen, um Speicher zu sparen.</li>
+          <h4>Zweitens:</h4>
+          <li>Damit ihr keine hundert Jahre scrollen müsst, um die neueste Version zu finden.</li>
+          <h4>Drittens:</h4>
+          <li>So könnt ihr ältere Versionen dennoch bekommen, wenn ihr wollt.</li>
+          </section>
+          
+          <section id="trivia">
+          <h3 class="green">trivia</h3>
+          <ul>
+              <li>Diese Downloads auf dieser Seite zeigen, wie sich die HTML-Version entwickelt...</li>
+              <li>Es werden/wurden auch neue Inhalte hinzugefügt...</li>
+          </ul>
+          </section>
+          
+          <section id="gallery">
+          <h3 class="orange">Galerie</h3>
+              
+              
+<!--tabs tutorial-->
+<!--https://css-tricks.com/pure-css-tabs-with-details-grid-and-subgrid/-->
+              
+    <!--change the number of pages your gallery uses in the style here-->
+    <div class="gallery-grid" style="--pages:1;">
+              
+        <!--each gallery page goes under a <details> tag-->
+        <details class="gallery-page" name="g-page" style="--n:1;" open>
+          <summary>Seite 1</summary>
+          <div class="img-gallery">
+            <p>Keine verfügbar.</p>
+              
+            </div>
+        </details>
+        
+    </div>
+              
+      <!--here ends the image gallery-->
+          </section>
+
+          <section>
+          <h3 class="pink">Links</h3>
+              <ul>
+              <li><a href="https://jan955.itch.io/lena-htmlgeschichte">Download</a></li>
+              <li><a href="https://www.furaffinity.net/view/63307031/">Lesen (FurAffinity)</a></li>
+              <li><a href="https://jan955.neocities.org/lenastory/infos-overview.html">Lesen (Webseite)</a></li>
+                  
+              <!--you can remove this link lol-->
+              <li>Seiten-Template von: <a href="https://nomnomnami.com/" target="_blank">NomnomNami</a></li>
+              </ul>
+          </section>
+          
+          <!--a fake comment section where you can write whatever you want!-->
+          <section id="comments">
+          <h2>Kommentare:</h2>
+              
+          <!-- <article class="comment">
+              <div class="user"><img src="images/no-icon.png" class="icon">example-san<small>(+5)</small></div>
+              <p>a single comment (with upvotes!)</p>
+          </article> -->
+              
+          <!--for my pages, i make my characters talk to each other haha-->
+          <!-- <article class="comment">
+              <div class="user"><img src="images/no-icon.png" class="icon">commenter</div>
+              <p>the start of a comment thread.</p>
+              
+          <details class="reply"><summary>view replies (2)</summary>
+              
+              <article class="comment">
+                  <div class="user"><img src="images/no-icon.png" class="icon">reply guy</div>
+                  <p>i'm replying!</p>
+              </article>
+              <article class="comment">
+                  <div class="user"><img src="images/no-icon.png" class="icon">commenter</div>
+                  <p>stop that.</p>
+              </article>
+              
+          </details>
+          </article> -->
+              
+          <article class="comment">
+              <em>[Die Kommentare wurden pausiert...]</em>
+          </article>
+              
+          </section>
+          
+          <hr>
+          <nav>
+              <ul>
+                <li><a href="https://jan955.neocities.org/lenastory/infos-overview.html">[Hauptseite]</a></li>
+                <li><a href="index.html">Zurück zur Download-Seite</a></li>
+              </ul>
+          </nav>
+          
+      </main>
+      <footer>© 2026 [Jan Löwen]</footer>
+    
+  </body>
+</html>
